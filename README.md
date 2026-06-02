@@ -1,14 +1,16 @@
 # 4chan API #
-#### Welcome to the documentation for 4chan's read-only JSON API, originally launched in September of 2012.
+#### Welcome to the documentation for 4chan's read‑only JSON API, originally launched in September 2012. This API provides JSON endpoints for boards, threads, and posts, allowing developers to build tools and visualizations.
 ----
 ## Getting started
 Data from the 4chan API is exclusively accessible from `a.4cdn.org`, via either `http://` or `https://` protocols. `a.4cdn.org` serves JSON representations of posts made at [`4chan.org`](https://4chan.org/) and [`4channel.org`](https://4channel.org/) boards.  All examples in the documentation for the 4chan API use `https://`.
 
+For example, you can fetch the list of boards with:
+curl https://a.4cdn.org/boards.json  
 [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) is supported from origins `boards.4chan.org` or `boards.4channel.org`, via `http://` or `https://`. Requests are accepted when using the following HTTP request types:
   - [`GET`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET)
   - [`OPTIONS`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/OPTIONS)
   - [`HEAD`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/HEAD)
-
+  - Requests are accepted when using the following HTTP request types.
 ### Table of contents ###
 
 | **Documentation Page**   | **Description**      |
@@ -18,7 +20,7 @@ Data from the 4chan API is exclusively accessible from `a.4cdn.org`, via either 
 | [Archive.json](pages/Archive.md) | Documentation for the 4chan native archive and its JSON|
 | [Boards.json](pages/Boards.md) | Documentation for the 4chan board list and its attributes. |
 | [Catalog.json](pages/Catalog.md) | Documentation for the JSON representation of the 4chan native catalog |
-| [Index endpoint](pages/Indexes.md) | Documentation for the JSON representaion of board index (main) pages |
+| [Index endpoint](pages/Indexes.md) | Documentation for the JSON representation of specific 4chan threads.
 | [Thread endpoint](pages/Threads.md) | Documentation for the JSON representation of specific 4chan threads. |
 | [Thread list](pages/Threadlist.md) | Documentation for the board threadlist and its brief stats|
 
